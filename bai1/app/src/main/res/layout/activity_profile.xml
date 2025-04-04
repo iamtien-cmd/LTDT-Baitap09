@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ProfileActivity">
+
+    <!-- Thanh tiêu đề -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Tiêu đề Hồ sơ cá nhân -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hồ sơ cá nhân"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Ảnh đại diện -->
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_placeholder"
+        android:background="@drawable/circle_background"
+        android:padding="4dp" />
+
+    <!-- Thông tin cá nhân -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Mã ID"
+            style="@style/ProfileLabel" />
+        <TextView
+            android:id="@+id/tvUserId"
+            style="@style/ProfileValue"
+            android:text="3" />
+
+        <TextView
+            android:text="Tên đăng nhập"
+            style="@style/ProfileLabel" />
+        <TextView
+            android:id="@+id/tvUsername"
+            style="@style/ProfileValue"
+            android:text="trung1" />
+
+        <TextView
+            android:text="Họ tên"
+            style="@style/ProfileLabel" />
+        <TextView
+            android:id="@+id/tvFullName"
+            style="@style/ProfileValue"
+            android:text="Nguyễn Hữu Trung" />
+
+        <TextView
+            android:text="Email"
+            style="@style/ProfileLabel" />
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/ProfileValue"
+            android:text="trung2@gmail.com" />
+
+        <TextView
+            android:text="Giới tính"
+            style="@style/ProfileLabel" />
+        <TextView
+            android:id="@+id/tvGender"
+            style="@style/ProfileValue"
+            android:text="Male" />
+
+    </LinearLayout>
+
+    <!-- Nút Đăng Xuất -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/red"
+        android:text="ĐĂNG XUẤT"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+</LinearLayout>

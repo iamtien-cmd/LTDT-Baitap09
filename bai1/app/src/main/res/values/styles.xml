@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style cho nhãn (Label) -->
+    <style name="ProfileLabel">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#757575</item> <!-- Màu xám -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!-- Style cho giá trị (Value) -->
+    <style name="ProfileValue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item> <!-- Màu đen -->
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+</resources>
