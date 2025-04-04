@@ -15,8 +15,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
-import vn.iostar.tuan9.Const.Const;
-import vn.iostar.tuan9.Model.ImageUpload;
+import vn.iostar.bai1.Const.Const;
+import vn.iostar.bai1.Model.ImageUpload;
 
 public interface ServiceAPI {
     public static final String BASE_URL = "http://app.iostar.vn/appfoods/";

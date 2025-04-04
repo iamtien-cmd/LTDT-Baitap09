@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "vn.iostar.bai1"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "vn.iostar.bai1"
